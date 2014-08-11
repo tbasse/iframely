@@ -40,7 +40,7 @@ module.exports = function(app) {
         }
 
         if (uri.split('/')[2].indexOf('.') === -1) {
-            return next(new Error("local domains not supported"));
+            //return next(new Error("local domains not supported"));
         }
 
         log('Loading /iframely for', uri);
